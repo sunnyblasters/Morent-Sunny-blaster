@@ -18,13 +18,13 @@ function Service() {
                   </div>
 
                   <div className='w-full flex lg:gap-2 pb-3 px-1 justify-evenly items-center'>
-                      <div className='flex flex-col gap-2 justify-center items-start'>
+                      <div className='flex flex-col gap-2 justify-center border-r-[1px] border-[#C3D4E9] items-start'>
                           <h3 className='text-base font-bold'>
                               Location
                           </h3>
 
                           {/* <ComboboxDemo /> */}
-                          <select name="hello" id="" aria-placeholder='hello' className='py-2 px-2 sm:px-4 rounded-[5px] text-[12px] font-bold outline-none' >
+                          <select name="hello" id="" aria-placeholder='hello' className='py-2 mr-1 px-2 sm:px-4 rounded-[5px] text-[12px] font-bold outline-none' >
                             <option value="karachi">Karachi</option>
                             <option value="islamabad">Islamabad</option>
                             <option value="lahore">Lahore</option>
@@ -34,7 +34,7 @@ function Service() {
                           
                       </div>
 
-                      <div className='flex flex-col gap-2 justify-center items-start'>
+                      <div className='flex flex-col gap-2 justify-center border-r-[1px] border-[#C3D4E9] items-start'>
                           <h3 className='text-base font-bold'>
                               Date
                           </h3>
@@ -67,13 +67,13 @@ function Service() {
                   </div>
 
                   <div className='w-full flex lg:gap-2 pb-3 px-1 justify-evenly items-center'>
-                      <div className='flex flex-col gap-2 justify-center items-start'>
+                      <div className='flex flex-col gap-2 border-r-[1px] border-[#C3D4E9] justify-center items-start'>
                           <h3 className='text-base font-bold'>
                               Location
                           </h3>
 
                           {/* <ComboboxDemo /> */}
-                          <select name="" id="" className='py-2 px-2 sm:px-4 rounded-[5px] text-[12px] font-bold outline-none' >
+                          <select name="" id="" className='py-2 px-2 mr-1 sm:px-4 rounded-[5px] text-[12px] font-bold outline-none' >
                             <option value="karachi">Karachi</option>
                             <option value="islamabad">Islamabad</option>
                             <option value="lahore">Lahore</option>
@@ -83,7 +83,7 @@ function Service() {
                           
                       </div>
 
-                      <div className='flex flex-col gap-2 justify-center items-start'>
+                      <div className='flex flex-col gap-2 justify-center items-start border-r-[1px] border-[#C3D4E9]'>
                           <h3 className='text-base font-bold'>
                               Date
                           </h3>
