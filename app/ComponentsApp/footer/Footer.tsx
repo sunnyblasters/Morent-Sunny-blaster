@@ -16,7 +16,7 @@ function Footer() {
         <main className='w-full  py-10  flex flex-col justify-center items-center sm:bg-white gap-4'>
             <div className='w-[100%] sm:w-[90%]  px-1 sm:px-4 md:px-0 md:gap-8 gap-3 lg:gap-0 flex flex-wrap lg:flex-row justify-between items-center'>
                 
-                <div className='w-full mb-4 sm:mb-0 sm:w-[292px] logo self-start flex flex-col gap-3 justify-start'>
+                <div className='w-full px-3 sm:px-0 mb-4 sm:mb-0 sm:w-[292px] logo self-start flex flex-col gap-3 justify-start'>
                     <h3 className='text-[32px] font-bold text-[#3563E9]'>Morent</h3>
                     <p className='text-[14px] w-[292px] font-normal text-[#90A3BF]  sm:text-[#596780]'>Our vision is to provide convenience and help increase your sales business.</p>
 
