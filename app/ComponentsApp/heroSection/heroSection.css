@@ -1,0 +1,157 @@
+
+
+
+@media (min-width: 1000px) {
+
+    .heroImg1 {
+
+        background-image: url('/hero1.png');
+        background-position: bottom;
+        background-repeat: no-repeat;
+        background-size: 406px auto;
+    }
+
+    .heroImg2 {
+
+        background-image: url('/hero2.png');
+        background-position: 50% 150px;
+        background-repeat: no-repeat;
+        background-size: 406px auto;
+    }
+
+    .hero-sec {
+
+        height: 400px;
+    }
+
+    p {
+
+        font-size: 16px;
+        font-weight: medium;
+    }
+
+    h3 {
+
+        font-size: 32px;
+        font-weight: 600;
+    }
+
+    button {
+        
+        font-size: 16px;
+        font-weight: 600;
+    }
+}
+
+@media (max-width: 999px) {
+
+    .heroImg1 {
+
+        background-image: url('/hero1.png');
+        background-position: bottom;
+        background-repeat: no-repeat;
+        background-size: 306px auto;
+    }
+
+    .heroImg2 {
+
+        background-image: url('/hero2.png');
+        background-position: 50% 200px;
+        background-repeat: no-repeat;
+        background-size: 306px auto;
+    }
+
+    .hero-sec {
+
+        height: 400px;
+    }
+
+    p {
+
+        font-size: 16px;
+        font-weight: medium;
+    }
+
+    h3 {
+
+        font-size: 32px;
+        font-weight: 600;
+    }
+
+    button {
+        
+        font-size: 16px;
+        font-weight: 600;
+    }
+
+}
+
+@media (max-width: 768px) {
+
+    .heroImg1 {
+
+        background-image: url('/hero1.png');
+        background-position: bottom;
+        background-repeat: no-repeat;
+        background-size: 400px auto;
+    }
+
+    
+    .heroImg2 {
+
+        background-image: url('/hero2.png');
+        background-position: 50% 150px;
+        background-repeat: no-repeat;
+        background-size: 406px auto;
+    }
+
+    .hero-sec {
+
+        height: 400px;
+    }
+    
+}
+
+@media (max-width: 500px) {
+
+    .heroImg1 {
+
+        background-image: url('/hero1.png');
+        background-position: bottom;
+        background-repeat: no-repeat;
+        background-size: 250px auto;
+
+    }
+
+    
+    .heroImg2 {
+
+        background-image: url('/hero2.png');
+        background-position: 50% 100px;
+        background-repeat: no-repeat;
+        background-size: 250px auto;
+    }
+
+    .hero-sec {
+
+        height: 250px;
+    }
+
+    p {
+
+        font-size: 12px;
+        font-weight: medium;
+    }
+
+    h3 {
+
+        font-size: 16px;
+        font-weight: 600;
+    }
+
+    button {
+        
+        font-size: 12px;
+        font-weight: 600;
+    }
+}
