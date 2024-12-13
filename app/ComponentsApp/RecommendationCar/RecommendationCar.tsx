@@ -6,6 +6,7 @@ import { BsFillPeopleFill } from "react-icons/bs";
 import { TbSteeringWheelFilled } from "react-icons/tb";
 import { CiHeart } from "react-icons/ci";
 import Image from 'next/image';
+import { objectDetail } from './ObjectsFile'
 
 
 
@@ -21,9 +22,7 @@ function RecommendationCar() {
 
     useEffect(() => {
 
-        fetch('/data.json')
-            .then((res) => res.json())
-            .then((data) => setItems(data))
+        return setItems(objectDetail)
 
     }), [];
 
@@ -40,7 +39,7 @@ function RecommendationCar() {
                     <h3 className='text-[#90A3BF] text-base font-semibold'>Recommendation Car</h3>
                     <span className='hidden sm:flex text-base text-[#3563E9] font-semibold'>View All</span>
                 </div>
-                <div className='flex flex-wrap justify-center items-center gap-3'>
+                <div className='flex flex-wrap lg:justify-center justify-around items-center gap-3'>
                     {
                         items.slice(0, visible).map((item) => (
 

@@ -1,10 +1,13 @@
-import Image from "next/image";
+
 import HeroSection from "./ComponentsApp/heroSection/HeroSection";
 import Service from "./ComponentsApp/service/service";
 import PopularCar from "./ComponentsApp/popularcar/PopularCar";
 import RecommendationCar from "./ComponentsApp/RecommendationCar/RecommendationCar";
 
-export default function Home() {
+export default  function Home() {
+
+  
+
   return (
     <main>
         <div>
@@ -13,6 +16,7 @@ export default function Home() {
           <PopularCar />
           <RecommendationCar />
 
+            
         </div>
     </main>
   );
