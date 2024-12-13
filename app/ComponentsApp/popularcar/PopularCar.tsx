@@ -13,7 +13,7 @@ function PopularCar() {
                   <Card
                       name='Koenigsegg'
                       type='Sport'
-                      image='/pc1.png'
+                      image='/sp1.png'
                       fuel='90L'
                       transmission='Manual'
                       capacity='2 People'
@@ -24,7 +24,7 @@ function PopularCar() {
                   <Card
                       name='Nissan GT - R'
                       type='Sport'
-                      image='/pc2.png'
+                      image='/sp2.png'
                       fuel='80L'
                       transmission='Manual'
                       capacity='2 People'
@@ -35,7 +35,7 @@ function PopularCar() {
                   <Card
                       name='Rolls - Royce'
                       type='Sedan'
-                      image='/pc3.png'
+                      image='/sp3.png'
                       fuel='70L'
                       transmission='Manual'
                       capacity='2 People'
@@ -46,7 +46,7 @@ function PopularCar() {
                   <Card
                       name='Nissan GT - R'
                       type='Sport'
-                      image='/pc2.png'
+                      image='/sp2.png'
                       fuel='80L'
                       transmission='Manual'
                       capacity='2 People'
