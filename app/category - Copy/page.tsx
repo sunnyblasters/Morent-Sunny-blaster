@@ -9,56 +9,99 @@ import Image from 'next/image';
 import { objectDetail } from './ObjectsFile'
 import { LuArrowDownUp } from "react-icons/lu";
 
-export interface Product {
-    name: string;
-    type: string;
-    image: string;
-    fuel: string;
-    transmission: string;
-    capacity: string;
-    rent: string;
-    rentDetail: string;
-  }
+
 
 
 function CategoryPage() {
 
 
-    const [filter, setFilter] = useState<string>('');
-    const [products, setProducts] = useState<Product[]>(objectDetail);
-  
-    const handleFilterChange = (type: string) => {
-      setFilter(type);
-      if (type) {
-        setProducts(objectDetail.filter((product) => product.type === type));
-      } else {
-        setProducts(objectDetail);
-      }
-    };
 
 
 
 
- 
+
+    const [type, setType] = useState<string>('Sport')
+
+    const [items, setItems] = useState<any[]>([])
+
+    const [capacity, setCapacity] = useState()
+
+
+    useEffect(() => {
+
+        return setItems(objectDetail)
+
+
+
+    }), [];
+
+
+
+    let suvClick = () => {
+
+        return setType('SUV')
+
+    }
+
+    let sportClick = () => {
+
+        return setType('Sport')
+
+    }
+
+    let MPVClick = () => {
+
+        return setType('MPV')
+
+    }
+
+    let SedanClick = () => {
+
+        return setType('Sedan')
+
+    }
+
+    let CoupeClick = () => {
+
+        return setType('Coupe')
+
+    }
+
+    let HatchbackClick = () => {
+
+        return setType('Hatchback')
+    }
+
+    // let AllCarsClick = ()=> {
+
+            
+
+    // }
+
 
 
     return (
         <main className='flex justify-between items-start'>
-            <div className='w-[300px] hidden  h-full bg-white md:flex flex-col justify-start p-8 items-start'>
+            <div className='w-[300px] hidden  h-[1600px] bg-white md:flex flex-col justify-start p-8 items-start'>
 
                 <h3 className='text-[12px] text-[#90A3BF] mb-4'>Type</h3>
                 <nav className='text-[20px] text-[#1A202C] flex flex-col gap-3'>
-                    
-                    <div className='flex gap-2'><input type="radio" name="same" id="All" defaultChecked/><label htmlFor="All" className='cursor-pointer' onClick={() => handleFilterChange('')}>All</label></div>
-                    <div className='flex gap-2'><input type="radio" name="same" id="Sport" /><label htmlFor="Sport" className='cursor-pointer' onClick={() => handleFilterChange('Sport')}>Sport</label></div>
-                    <div className='flex gap-2'><input type="radio" name="same" id="SUV" /><label htmlFor="SUV" className='cursor-pointer' onClick={() => handleFilterChange('SUV')}>SUV</label></div>
-                    <div className='flex gap-2'><input type="radio" name="same" id="MPV" /><label htmlFor="MPV" className='cursor-pointer' onClick={() => handleFilterChange('MPV')}>MPV</label></div>
-                    <div className='flex gap-2'><input type="radio" name="same" id="Sedan" /><label htmlFor="Sedan" className='cursor-pointer' onClick={() => handleFilterChange('Sedan')}>Sedan</label></div>
-                    <div className='flex gap-2'><input type="radio" name="same" id="Hatchback" /><label htmlFor="Hatchback" className='cursor-pointer' onClick={() => handleFilterChange('Hatchback')}>Hatchback</label></div>
-                    
+                    {/* <ul className='text-[20px] text-[#1A202C] flex flex-col gap-3'> */}
+                    {/* <div className='flex gap-2'><input type="radio" name="same" id="All-Cars" defaultChecked/><label htmlFor="All-Cars" className='cursor-pointer' onClick={AllCarsClick}>All Cars</label></div> */}
+                    <div className='flex gap-2'><input type="radio" name="same" id="Sport" defaultChecked/><label htmlFor="Sport" className='cursor-pointer' onClick={sportClick}>Sport</label></div>
+                    <div className='flex gap-2'><input type="radio" name="same" id="SUV" /><label htmlFor="SUV" className='cursor-pointer' onClick={suvClick}>SUV</label></div>
+                    <div className='flex gap-2'><input type="radio" name="same" id="MPV" /><label htmlFor="MPV" className='cursor-pointer' onClick={MPVClick}>MPV</label></div>
+                    <div className='flex gap-2'><input type="radio" name="same" id="Sedan" /><label htmlFor="Sedan" className='cursor-pointer' onClick={SedanClick}>Sedan</label></div>
+                    <div className='flex gap-2'><input type="radio" name="same" id="Coupe" /><label htmlFor="Coupe" className='cursor-pointer' onClick={CoupeClick}>Coupe</label></div>
+                    <div className='flex gap-2'><input type="radio" name="same" id="Hatchback" /><label htmlFor="Hatchback" className='cursor-pointer' onClick={HatchbackClick}>Hatchback</label></div>
+                    {/* <input type="radio" name="sport" id="sport" /><li>SUV</li>
+                        <input type="radio" name="sport" id="sport" /><li>MPV</li>
+                        <input type="radio" name="sport" id="sport" /><li>Sedan</li>
+                        <input type="radio" name="sport" id="sport" /><li>Coupe</li>
+                        <input type="radio" name="sport" id="sport" /><li>Hatchback</li> */}
+                    {/* </ul> */}
                 </nav>
 
-                
             </div>
 
             <div className='flex flex-col my-5  w-full'>
@@ -169,7 +212,7 @@ function CategoryPage() {
 
                     {
                         
-                        products.map((item)=> (
+                        items.filter((item) => item.type === type  ).map((item) => (
 
                             <main className='w-[304px] h-[240] sm:h-[388px] flex flex-col justify-between p-6 rounded-[5px] items-center bg-white relative'>
                                 <div className='flex flex-col justify-between items-start w-full'>
@@ -203,7 +246,9 @@ function CategoryPage() {
                                 </div>
 
                             </main>
-                        ))
+
+                        )
+                        )
                     }
 
                 </div>
@@ -214,7 +259,7 @@ function CategoryPage() {
 
                     {
 
-                        products.map((item) => (
+                        items.map((item) => (
 
                             <main className='w-[304px] h-[240] sm:h-[388px] flex flex-col justify-between p-6 rounded-[5px] items-center bg-white relative'>
                                 <div className='flex flex-col justify-between items-start w-full'>
